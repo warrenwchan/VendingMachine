@@ -33,7 +33,7 @@ class vendingMachine {
 
     itemDispense (balance) {
         if(balance) {
-            console.log('this is the balance entered', balance)
+            // console.log('this is the balance entered', balance)
             for( var i = 0; i < this.data.invintory.length; i++) {
                 if( balance === this.data.invintory[i].cost) {
                     return this.data.invintory[i].name;
@@ -46,10 +46,10 @@ class vendingMachine {
         if( balance > this.data.invintory[1].cost) {
             let change = balance - this.data.invintory[1].cost;
             const coinsReverse = this.data.coins.reverse()
-            console.log(change)
+            // console.log(change)
 
             for( var i = 0; i < this.data.coins.length; i++ ) {
-                console.log(change)
+                // console.log(change)
                 if( change % this.data.coins[i].value === 0 ) {
                     return this.data.coins[i].type;
                 }
