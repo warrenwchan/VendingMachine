@@ -23,7 +23,7 @@ describe('vendingMachine', () => {
                 {
                     type: 'loonlie',
                     value: 1.00,
-                    amount: 10
+                    amount: 1
                 },
                 {
                     type: 'toonie',
@@ -71,4 +71,9 @@ describe('vendingMachine', () => {
         })
     })
 
+    describe('When coins are low 25 coins', () => {
+        it('Should re-supply coins amount to 100', () => {
+            expect(test.machine.resupplyChange()).toBe(100)
+        })
+    })
 });

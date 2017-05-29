@@ -13,14 +13,21 @@ class vendingMachine {
     refillInvintory () {
         const refill = 15;
         for(var i = 0; i < this.data.invintory.length; i++ ) {
-            if(this.data.invintory[i].amount = 5) {
+            if(this.data.invintory[i].amount <= 5) {
                 return this.data.invintory[i].amount + refill;
             }
-        } return this.data.invintory
+        }
     }
 
     resupplyChange () {
-
+        const resupplied = 100;
+        for(var i = 0; i < this.data.coins.length; i++ ) {
+            if(this.data.coins[i].amount <= 25) {
+                var resupplyAmount = resupplied - this.data.coins[i].amount;
+                console.log(resupplyAmount);
+                return this.data.coins[i].amount + resupplyAmount;
+            }
+        }
     }
 
     itemDispense () {
