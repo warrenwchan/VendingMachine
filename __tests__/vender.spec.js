@@ -76,4 +76,10 @@ describe('vendingMachine', () => {
             expect(test.machine.resupplyChange()).toBe(100)
         })
     })
+
+    describe('When coins are put in', () => {
+        it('Should dispense correct item according to change provided', () => {
+            expect(test.machine.itemDispense()).toBe()
+        })
+    })
 });
