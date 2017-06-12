@@ -1,0 +1,22 @@
+[
+    {
+        "item-name": "Chips",
+        "amount": 10,
+        "price": 2.00
+    },
+    {
+        "item-name": "Cookies",
+        "amount": 15,
+        "price": 1.50
+    },
+    {
+        "item-name": "Pop",
+        "amount": 20,
+        "price": 2.00
+    },
+    {
+        "item-name": "Candy",
+        "amount": 20,
+        "price": 1.00
+    }
+]
